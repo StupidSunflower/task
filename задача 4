@@ -1,0 +1,26 @@
+//Вывести на экран, консольного приложения, прямоугольный треугольник из звездочек “*”, с длиной катета m.
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите длину катета: ");
+            int catet = Convert.ToInt32(Console.ReadLine());
+            int s = 0;
+            for (s = 0; s <= catet; s++)
+            {
+                int number = 0;
+                while (number<s)
+                {
+                    Console.Write("*");
+                    number++;
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+    }
+}
