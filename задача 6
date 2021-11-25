@@ -1,0 +1,23 @@
+// Первая строка содержит число n (1 ≤ n ≤ 100). Во второй строке записаны n целых чисел, каждое из которых не превышает по модулю 100. 
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var n = Convert.ToInt32(Console.ReadLine());
+            var array = Array.ConvertAll(Console.ReadLine().Split(' '), s => int.Parse(s));
+            int max = array[0];
+            for (int a = 1; a < array.Length; a++)
+            {
+                if (max < array[a])
+                {
+                    max = array[a];
+                }
+            }
+            Console.WriteLine(max);
+        }
+    }
+}
