@@ -1,0 +1,7 @@
+//Дан массив целых чисел. Переписать все положительные элементы во второй массив, а остальные - в третий.
+var a = new[] { 4, 6, -7, 7, -8, -87, 87, -55, 77};
+var b = a.Where(x => x < 0).ToArray();
+var c = a.Where(x => x >= 0).ToArray();
+Console.WriteLine(string.Join(", ", a));
+Console.WriteLine(string.Join(", ", b));
+Console.WriteLine(string.Join(", ", c));
