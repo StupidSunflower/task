@@ -1,0 +1,21 @@
+//Используя вложенные циклы, вывести таблицы умножения от второй до шестой.
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int x = 2; x <= 6; x ++)
+            {
+                for (int y = 1; y <= 10; y ++)
+                {
+                    Console.WriteLine(x * y + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+    }
+}
