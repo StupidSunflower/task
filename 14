@@ -1,0 +1,28 @@
+using System;
+
+namespace ConsoleApp13
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int c = 0;
+            string q = "";
+            int n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        c += 1;
+                        q += "+";
+                    }
+                }
+                Console.WriteLine($"{i}{q}");
+                c = 0;
+                q = "";
+            }
+        }
+    }
+}
