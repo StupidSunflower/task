@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+
+    static void Perimeter()
+    {
+        int a =
+        int.Parse(Console.ReadLine());
+        int b =
+        int.Parse(Console.ReadLine());
+        int c =
+        int.Parse(Console.ReadLine());
+        int s = 0;
+        s += c;
+        s += a;
+        s += b;
+        Console.WriteLine(s);
+    }
+    static void Main(string[] args)
+    {
+        Perimeter();
+
+        Console.ReadLine();
+    }
+
+}
