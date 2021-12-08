@@ -1,0 +1,21 @@
+using System;
+class HelloWorld
+{
+    static void Main()
+    {
+        string a = Convert.ToString(Console.ReadLine());
+        int count = 0;
+
+        for (int i = 0; i < a.Length; i++)
+        {
+            if (a[i] == ':')
+            {
+                count++;
+            }
+        }
+        Console.WriteLine(a.Replace(':', '%'));
+        Console.WriteLine(count);
+
+    }
+
+}
