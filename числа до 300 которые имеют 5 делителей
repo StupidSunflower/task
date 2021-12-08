@@ -1,0 +1,43 @@
+using System;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int x = 1;
+            int m = 0;
+            int i = 1;
+            int b = 300;
+            int count = 0;
+            int v = 0;
+            int[] numbers = new int[300];
+            for (a = 1, b = 300; a <= b; a++)
+            {
+                for (x = 1 + m; x > 0; x--)
+                {
+                    if (x % i == 0)
+                    {
+                        count++;
+                    }
+                    i++;
+                }
+                m++;
+                if (count == 5)
+                {
+                    numbers[v] = a;
+                    v++;
+                }
+                i = 1;
+                count = 0;
+            }
+            int d = 0;
+            for (d = 0, v = v; v > d; d++)
+            {
+                Console.WriteLine($"Число {numbers[d]} имеет 5 делителей.");
+            }
+        }
+    }
+}
